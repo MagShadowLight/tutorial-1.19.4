@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " L ",
+    "ALA",
+    " L "
+  ],
+  "key": {
+    "L": {
+      "item": "tutorial:lumi_ingot"
+    },
+    "A": {
+      "item": "tutorial:aetherial_essence"
+    }
+  },
+  "result": {
+    "item": "tutorial:ethereal_crystal",
+    "count": 1
+  }
+}

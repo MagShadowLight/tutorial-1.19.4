@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EEE",
+    "EAE",
+    "EEE"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "E": {
+      "item": "tutorial:essence_crystal"
+    }
+  },
+  "result": {
+    "item": "tutorial:essence_infused_crystal",
+    "count": 1
+  }
+}
