@@ -30,17 +30,23 @@ public class TutorialMod implements ModInitializer {
 	public static final Item LUMINARA_BLOOM = new Luminara_Bloom(new FabricItemSettings());
 	public static final Item RARE_SEED = new Rare_Seed(new FabricItemSettings());
 	public static final Item ESSENCE_INFUSED_CRYSTAL = new Essence_Infused_Crystal(new FabricItemSettings());
-	public static final Item Item10 = Registry.register(Registries.ITEM, new Identifier("tutorial", "item10"), new Item(new FabricItemSettings()));
-	public static final Item Item11 = Registry.register(Registries.ITEM, new Identifier("tutorial", "item11"), new Item(new FabricItemSettings()));
-	public static final Item Item12 = Registry.register(Registries.ITEM, new Identifier("tutorial", "item12"), new Item(new FabricItemSettings()));
-	public static final Item Item13 = Registry.register(Registries.ITEM, new Identifier("tutorial", "item13"), new Item(new FabricItemSettings()));
-	public static final Item Item14 = Registry.register(Registries.ITEM, new Identifier("tutorial", "item14"), new Item(new FabricItemSettings()));
-	public static final Item Item15 = Registry.register(Registries.ITEM, new Identifier("tutorial", "item15"), new Item(new FabricItemSettings()));
-	public static final Item Item16 = Registry.register(Registries.ITEM, new Identifier("tutorial", "item16"), new Item(new FabricItemSettings()));
-	public static final Item Item17 = Registry.register(Registries.ITEM, new Identifier("tutorial", "item17"), new Item(new FabricItemSettings()));
-	public static final Item Item18 = Registry.register(Registries.ITEM, new Identifier("tutorial", "item18"), new Item(new FabricItemSettings()));
-	public static final Item Item19 = Registry.register(Registries.ITEM, new Identifier("tutorial", "item19"), new Item(new FabricItemSettings()));
-	public static final Item Item20 = Registry.register(Registries.ITEM, new Identifier("tutorial", "item20"), new Item(new FabricItemSettings()));
+	public static final Item CELESTIAL_CRYSTAL = new Celestial_Crystal(new FabricItemSettings());
+	public static final Item CHRONO_SAND = new Chrono_Sand(new FabricItemSettings());
+	public static final Item LUNARITE_INGOT = new Lunarite_ingot(new FabricItemSettings());
+	public static final Item AURORA_DUST = new Aurora_Dust(new FabricItemSettings());
+	public static final Item ANCIENT_TIMEPIECE = new Ancient_Timepiece(new FabricItemSettings());
+	public static final Item CELESTIAL_NECTAR = new Celestial_Nectar(new FabricItemSettings());
+	public static final Item STORMFORGED_INGOT = new Stormforged_Ingot(new FabricItemSettings());
+	public static final Item UNCHARGED_CRYSTAL = new Uncharged_Crystal_Shard(new FabricItemSettings());
+	public static final Item CHARGED_CRYSTAL = new Charged_Crystal_Shard(new FabricItemSettings());
+	public static final Item THUNDERSTEEL_INGOT = new ThunderSteel_Ingot(new FabricItemSettings());
+	public static final Item SHADOWWEAVE_SILK = new ShadowWeave_Silk(new FabricItemSettings());
+
+	public static final Item ECLIPSIUM_CRYSTAL = new Eclipsium_Crystal(new FabricItemSettings())
+	public static final Item SHADOWWEAVE_CLOTH = new ShadowWeave_Cloth(new FabricItemSettings());
+	public static final Item PHOENIX_FEATHER = new Phoenix_Feather(new FabricItemSettings());
+	public static final Item HARMONIC_CRYSTAL = new Harmonic_Crystal(new FabricItemSettings());
+	public static final Item TIME_TWISTED_COMPASS = new Time_Twisted_Compass(new FabricItemSettings());
 
 	public static final String MOD_ID = "tutorial";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
@@ -66,6 +72,22 @@ public class TutorialMod implements ModInitializer {
 		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "luminara_bloom"), LUMINARA_BLOOM);
 		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "rare_seed"), RARE_SEED);
 		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "essence_infused_crystal"), ESSENCE_INFUSED_CRYSTAL);
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "celestial_crystal"), CELESTIAL_CRYSTAL);
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "chrono_sand"), CHRONO_SAND);
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "lunarite_ingot"), LUNARITE_INGOT);
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "aurora_dust"), AURORA_DUST);
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "ancient_timepiece"), ANCIENT_TIMEPIECE);
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "celestial_nector"), CELESTIAL_NECTAR);
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "stormforged_ingot"), STORMFORGED_INGOT);
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "uncharged_crystal"), UNCHARGED_CRYSTAL);
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "charged_crystal"), CHARGED_CRYSTAL);
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "thundersteel_ingot"), THUNDERSTEEL_INGOT);
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "shadowweave_silk"), SHADOWWEAVE_SILK);
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "eclipsium_crystal"), ECLIPSIUM_CRYSTAL);
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "shadowweave_cloth"), SHADOWWEAVE_CLOTH);
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "phoenix_feather"), PHOENIX_FEATHER);
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "harmonic_crystal"), HARMONIC_CRYSTAL);
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "time_twisted_compass"), TIME_TWISTED_COMPASS);
 	}
 
 	private void ItemGroupModifier() {
@@ -81,6 +103,7 @@ public class TutorialMod implements ModInitializer {
 			content.addAfter(ESSENCE_INFUSED_CRYSTAL, AETHERIAL_ESSENCE);
 			content.addAfter(AETHERIAL_ESSENCE, LUMI_INGOT);
 			content.addAfter(LUMI_INGOT, ETHEREAL_CRYSTAL);
+			content.addAfter(ETHEREAL_CRYSTAL, CELESTIAL_CRYSTAL);
 		});
 	}
 }
