@@ -3,7 +3,7 @@ package stuff;
 import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import stuff.TutorialItems;
+//import stuff.TutorialItems;
 
 public class CelestialCrystalToolMaterial implements ToolMaterial {
 
