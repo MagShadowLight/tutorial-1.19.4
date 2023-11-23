@@ -1,17 +1,17 @@
 {
 	"schemaVersion": 1,
 	"id": "tutorial",
-	"version": "${version}",
+	"version": "0.0.1",
 	"name": "Tutorial Mod",
-	"description": "Meow",
+	"description": "This is a mod that I'm creating while following the tutorial from Fabric",
 	"authors": [
 		"MagShadowLight"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/MagShadowLight/tutorial-1.19.4"
 	},
-	"license": "CC0-1.0",
+	"license": "ARR",
 	"icon": "assets/tutorial/icon.png",
 	"environment": "*",
 	"entrypoints": {
